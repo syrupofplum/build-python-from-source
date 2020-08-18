@@ -17,6 +17,7 @@ if [ ! -x "$pythonPath" ]; then
     make -C /home/openssl-1.1.1g
     make -C /home/openssl-1.1.1g install
     rm -rf /home/openssl-1.1.1g
+    rm -f /home/openssl.tar.gz
     /bin/cp -f /usr/local/openssl-1.1.1g/lib/libssl.so.1.1 /usr/lib64/
     /bin/cp -f /usr/local/openssl-1.1.1g/lib/libcrypto.so.1.1 /usr/lib64/
 
